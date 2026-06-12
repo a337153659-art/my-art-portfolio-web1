@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Writing - Painting Portfolio</title>
+    <meta name="description" content="Writing and statements for a contemporary painting portfolio." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="site-title" href="index.html" aria-label="Back to Home">Wanyi He</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html#installation-projects">Installation</a>
+        <a href="projects.html#painting-projects">Painting</a>
+        <a href="writing.html">Writing</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="text-section section-pad page-start" aria-labelledby="writing-title">
+        <div class="section-heading">
+          <p class="eyebrow">Writing</p>
+          <h1 id="writing-title">Notes and statements</h1>
+        </div>
+        <div class="writing-list" data-writing></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> <span data-footer-name>Wanyi He</span></p>
+    </footer>
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

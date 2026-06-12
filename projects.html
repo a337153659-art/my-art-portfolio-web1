@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Projects - Painting Portfolio</title>
+    <meta name="description" content="Projects from a contemporary painting portfolio." />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="site-title" href="index.html" aria-label="Back to Home">Wanyi He</a>
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-nav-toggle>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html#installation-projects">Installation</a>
+        <a href="projects.html#painting-projects">Painting</a>
+        <a href="writing.html">Writing</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="section-pad page-start" aria-labelledby="projects-title">
+        <div class="section-heading">
+          <p class="eyebrow">Projects</p>
+          <div>
+            <h1 id="projects-title" data-projects-page-title>
+              Projects across painting, installation, and sculpture
+            </h1>
+            <p class="page-intro" data-projects-page-intro>
+              Each project can hold several forms of work: paintings, installation views,
+              sculptural objects, drawings, tests, and short notes on process.
+            </p>
+            <nav class="project-jump-links" aria-label="Project sections">
+              <a href="#installation-projects">Installation</a>
+              <a href="#painting-projects">Painting</a>
+            </nav>
+<button class="project-add-project" type="button" data-add-project="Painting">
+              添加绘画/拼贴项目
+            </button>
+          </div>
+        </div>
+        <div class="projects-list" data-projects></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> <span data-footer-name>Wanyi He</span></p>
+    </footer>
+    <dialog class="lightbox" data-lightbox aria-label="Image preview">
+      <button class="lightbox-close" type="button" aria-label="Close image preview" data-lightbox-close>Close</button>
+      <figure>
+        <img alt="" data-lightbox-image />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+    </dialog>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>

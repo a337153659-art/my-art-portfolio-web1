@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wanyi He - Painting Portfolio</title>
+    <meta
+      name="description"
+      content="Contemporary painting portfolio for Slade Painting application."
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" data-header>
+      <a class="site-title" href="index.html" aria-label="Back to Home">Wanyi He</a>
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        data-nav-toggle
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="site-nav" aria-label="Primary navigation" data-nav>
+        <a href="index.html">Home</a>
+        <a href="projects.html#installation-projects">Installation</a>
+        <a href="projects.html#painting-projects">Painting</a>
+        <a href="writing.html">Writing</a>
+        <a href="cv.html">CV</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="intro section-pad" id="home" aria-labelledby="home-title">
+        <div class="intro-copy">
+          <p class="eyebrow">Contemporary Painting Portfolio</p>
+          <h1 id="home-title">Painting as a way of holding uncertain images.</h1>
+          <p class="intro-text">
+            I work with painting, drawing, image fragments, and studio notes to
+            test how memory, surface, and observation can remain unresolved.
+          </p>
+          <a class="intro-link" href="projects.html">View projects</a>
+        </div>
+        <figure class="intro-image">
+          <button
+            class="image-button"
+            type="button"
+            data-lightbox-src="assets/work-01.png"
+            data-lightbox-caption="Placeholder work image"
+          >
+            <img src="assets/work-01.png" alt="Placeholder painting documentation" />
+          </button>
+          <figcaption>Selected work, replace with your own image.</figcaption>
+        </figure>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span data-year></span> <span data-footer-name>Wanyi He</span></p>
+    </footer>
+    <dialog class="lightbox" data-lightbox aria-label="Image preview">
+      <button class="lightbox-close" type="button" aria-label="Close image preview" data-lightbox-close>
+        Close
+      </button>
+      <figure>
+        <img alt="" data-lightbox-image />
+        <figcaption data-lightbox-caption></figcaption>
+      </figure>
+    </dialog>
+
+    <script src="content.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
